@@ -19,3 +19,6 @@ It is a Backend for Survey Tool Written in Springboot Java to handle Api calls f
 * (locahost:8090/surway/user/register POST send username(email) password image as base64 String and the data in request BODY)
 
 Link for it's Front End Part [Surway_Frontend](https://github.com/saksham2105/surway_frontend)
+
+## Demo Video
+[Demo](https://youtu.be/BA7WiKWd5b8)
