@@ -1,20 +1,19 @@
-# Spring Boot Application Google App Engine Standard with Java 11
+# Backend for Surway(A Survey Tool)
 
-This sample shows how to deploy a [Spring Boot](https://spring.io/projects/spring-boot)
-application to Google App Engine stadndard.
+It is a Backend for Survey Tool Written in Springboot Java to handle Api calls for Surway FrontEnd
 
-## Setup
+## Features
+* It Supports JWT so that no unauthorized User can send request to our Backend API's
+* It Supports CORS So user has to first authorized themselves to Use This Tool
+* All the functionalities are covered By Java 11 Features
+* Captcha has been developed from scratch using AWT and java graphics programming
+* It Uses an API for validating Payment Transactions through RazorPay Java API
+* It supports image encryption as Base64 String
+* It uses AES encyption algorithm to encrypt password in the database
+* It Uses MongoJpa(To connect with mongodb to store and fetch data in Mongodb Cluster)
 
-See [Prerequisites](../README.md#Prerequisites).
-
-## Deploying
-
-```bash
-gcloud app deploy
-```
-
-To view your app, use command:
-```
-gcloud app browse
-```
-Or navigate to `https://<your-project-id>.appspot.com`.
+## How to Use it
+Clone this repo run the SprinbootApplication File contains main functions
+Customized your port in application.properties File and in your browser First send request to authenticate api to verify userful it will generate a token it will be valid for 10 minutes then use this token in headers to hit any API end point
+(localhost:8080/authenticate send username & password to this api it will be of type POST)
+(locahost:8090/surway/user/register POST send username(email) password image as base64 String and the data in request BODY)
